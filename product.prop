@@ -96,3 +96,9 @@ persist.sys.disable_rescue=true
 persist.bluetooth.bqr.event_mask=14
 # BQR minimum report interval configuration
 persist.bluetooth.bqr.min_interval_ms=500
+
+# missing vendor props
+drm.service.enabled=true
+media.mediadrmservice.enable=true
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
