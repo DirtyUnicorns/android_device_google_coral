@@ -50,7 +50,7 @@ BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 11.0.4
+TARGET_KERNEL_CLANG_VERSION := 11.0.3
 TARGET_KERNEL_SOURCE := kernel/google/floral
 TARGET_KERNEL_CONFIG := floral_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
@@ -267,5 +267,7 @@ BOARD_SUPER_PARTITION_ERROR_LIMIT := 9231663104
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
+
+BOARD_USES_CAF_LIBJSON := true
 
 -include vendor/google_devices/coral/proprietary/BoardConfigVendor.mk
